@@ -1,0 +1,16 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "serve": "lerna run --parallel start",
+    "lerna:add": "lerna add",
+    "kill-ports": "kill-port --port 3000,3001,3002,3003, 4000"
+  },
+  "devDependencies": {
+    "kill-port": "^1.6.1",
+    "lerna": "^4.0.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
